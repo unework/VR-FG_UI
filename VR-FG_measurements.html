@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<meta content="NO-CACHE" http-equiv="CACHE-CONTROL" />
+	<meta content="IE=EDGE" http-equiv="X-UA-Compatible" />
+	<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>UI Library | VR-FinanzGuide</title>
+	<link href="https://crossnet-test.crossinx.com:8443/crossnet/images/vrbutler/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+	<link media="screen" href="patches-ux-design.css" rel="stylesheet" />
+	<!-- <link media="screen" href="../sass-VRFG/patches-ux-design.css" rel="stylesheet" /> -->
+	<link href="lib/X-rayHTML.css" rel="stylesheet">
+	<link href="lib/prism.css" rel="stylesheet">
+	<script src="lib/jquery.js" type="text/javascript"></script>
+	<script src="lib/X-rayHTML.js"></script>
+	<script src="lib/prism.js"></script>
+	<style>
+	@font-face {
+		font-family: frutiger_vrbold;
+		src: url(fonts/vr051___-webfont.eot);
+		src: url(fonts/vr051___-webfont.eot?#iefix) format("embedded-opentype"),
+		url(fonts/vr051___-webfont.woff) format("woff"),
+		url(fonts/vr051___-webfont.ttf) format("truetype"),
+		url(fonts/vr051___-webfont.svg#frutiger_vrbold) format("svg");
+		font-weight: 400;
+		font-style: normal
+	}
+
+	@font-face {
+		font-family: frutiger_vrregular;
+		src: url(fonts/vr021___-webfont.eot);
+		src: url(fonts/vr021___-webfont.eot?#iefix) format("embedded-opentype"),
+		url(fonts/vr021___-webfont.woff) format("woff"),
+		url(fonts/vr021___-webfont.ttf) format("truetype"),
+		url(fonts/vr021___-webfont.svg#frutiger_vrregular) format("svg");
+		font-weight: 400;
+		font-style: normal
+	}
+
+	</style>
+</head>
+
+<body class="form-wrapper">
+	<header class="header-top">
+		<div class="container-fluid wrapper">
+			<div class="row">
+				<div class="col-9">
+					<a href="VR-FG_UI.html">
+						<img alt="Logo" class="mt-2 ml-3" src="lib/vrbutler_logo.png">
+					</a>
+					<span class="text-gray align-bottom ml-2">Styleguide (updated 03. May 2018)</span>
+				</div>
+				<nav class="col-3">
+					<ul class="ui-top-nav">
+						<li><a href="VR-FG_measurements.html">Measurements</a></li>
+						<!-- <li><a href="#">Templates</a></li> -->
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid mt-4 wrapper">
+		<div class="row">
+			<main class="col ml-3">
+				<section id="measurements">
+					<h1>Measurements</h1>
+					<div class="row">
+						<div class="col form-block">
+							<h2>Inbox: Overview</h2>
+							<img alt="Inbox: Overview" class="ui-measurements" src="measurements/Inbox_Overview.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col form-block">
+							<h2>Inbox: Upload invoice</h2>
+							<img alt="Inbox: Upload invoice" class="ui-measurements" src="measurements/Inbox_Upload_invoice.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col form-block">
+							<h2>Settings: Add bank account</h2>
+							<img alt="Settings: Add bank account" class="ui-measurements" src="measurements/Settings_Add_bank_account.png">
+						</div>
+					</div>
+				</section>
+
+</main>
+</div>
+</div>
+
+<script type="text/javascript">
+$( window ).bind( "create.xrayhtml", function( e ) {
+	// Prism
+	var prism = !!~e.target.getAttribute( "class" ).indexOf( "prism" );
+	if( prism && "Prism" in window ) {
+		$( ".prism" ).find( "code" ).addClass( "language-markup" );
+		Prism.highlightAll();
+	}
+});
+</script>
+</body>
+
+</html>
